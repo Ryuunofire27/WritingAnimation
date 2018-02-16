@@ -1,0 +1,34 @@
+{
+  "name": "writing-animation",
+  "version": "1.0.0",
+  "description": "Animation of writing letter by letter",
+  "main": "index.js",
+  "scripts": {
+    "lint"  : "eslint src/index.js",
+    "build" : "babel src --out-dir build",
+    "test"  : "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/Ryuunofire27/WritingAnimation.git"
+  },
+  "keywords": [
+    "animation",
+    "writing"
+  ],
+  "author": "Carlos Villagomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ryuunofire27/WritingAnimation/issues"
+  },
+  "homepage": "https://github.com/Ryuunofire27/WritingAnimation#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
