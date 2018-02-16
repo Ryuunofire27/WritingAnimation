@@ -1,6 +1,6 @@
 {
   "name": "writing-animation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Animation of writing letter by letter",
   "main": "index.js",
   "scripts": {
