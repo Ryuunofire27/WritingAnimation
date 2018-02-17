@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-function writingAnimation(text, textContainer, delay) {
+var writingAnimation = function writingAnimation(text, textContainer, delay) {
   var stop = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
   var changeDelay = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
 

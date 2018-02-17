@@ -1,4 +1,4 @@
-function writingAnimation(text, textContainer, delay, stop = true, changeDelay = 0){
+const writingAnimation = (text, textContainer, delay, stop = true, changeDelay = 0) => {
   const textArray = text.split('');
   let i = 0;
   let write = true;
