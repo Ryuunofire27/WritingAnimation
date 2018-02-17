@@ -7,11 +7,11 @@ writing animation is a function that simulates writing as typing
 ### Browser
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/writing-animation@1.0.5/dist/browser/writing-animation.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/writing-animation/dist/browser/writing-animation.min.js" ></script>
 ```
 
 ### Server
-
+SS
 Using with [browserify](https://github.com/browserify/browserify)
 
 ```
