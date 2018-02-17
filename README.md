@@ -2,27 +2,35 @@
 
 writing animation is a function that simulates writing as typing
 
-## Instalation
+## How to use
+
+### Browser
+
+```
+<script src="https://cdn.jsdelivr.net/npm/writing-animation@1.0.5/dist/browser/writing-animation.min.js" ></script>
+```
+
+### Server
 
 ```
 npm install --save writing-animation
 ```
 
-### ES5
+#### ES5
 ```
 var writing = require('writing-animation');
 ```
 
-### ES6
+#### ES6
 ```
 import writing from 'writing-animation';
 ```
 
-## How to use
+#### Using
 
 writing(text, textContainer, delay [,stop, changeDelay]);
 
-### Parameters
+#### Parameters
 
 text : The text that you want to animate.
 
@@ -30,7 +38,7 @@ textContainer : The element of the DOM where you want to write the text.
 
 delay : The time in milliseconds to write a letter of the text.
 
-#### Optional
+##### Optional
 
 stop : A boolean value for stop the animation when the text was write.
 
