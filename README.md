@@ -11,7 +11,7 @@ writing animation is a function that simulates writing as typing
 ```
 
 ### Server
-SS
+
 Using with [browserify](https://github.com/browserify/browserify)
 
 ```
