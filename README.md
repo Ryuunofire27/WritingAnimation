@@ -12,6 +12,8 @@ writing animation is a function that simulates writing as typing
 
 ### Server
 
+Using with [browserify](https://github.com/browserify/browserify)
+
 ```
 npm install --save writing-animation
 ```
