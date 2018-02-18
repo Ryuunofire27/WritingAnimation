@@ -7,7 +7,7 @@ writing animation is a function that simulates writing as typing
 ### Browser
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/writing-animation/dist/browser/writing-animation.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/writing-animation/dist/writing-animation.min.js" ></script>
 ```
 
 ### Server

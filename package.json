@@ -1,6 +1,6 @@
 {
   "name": "writing-animation",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Animation of writing letter by letter",
   "main": "dist/server/writing-animation.min.js",
   "scripts": {

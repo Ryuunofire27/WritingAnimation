@@ -23,4 +23,10 @@ const writingAnimation = (text, textContainer, delay, stop = true, changeDelay =
   }, delay);
 };
 
-export default writingAnimation;
+(() => {
+    "use strict";
+    if(typeof module === 'object' && typeof module.exports === 'object'){
+      module.exports = writingAnimation;
+    }
+  }
+)();
