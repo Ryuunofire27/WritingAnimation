@@ -24,9 +24,8 @@ const writingAnimation = (text, textContainer, delay, stop = true, changeDelay =
 };
 
 (() => {
-    "use strict";
-    if(typeof module === 'object' && typeof module.exports === 'object'){
-      module.exports = writingAnimation;
-    }
+  if (typeof module === 'object' && typeof module.exports === 'object') {
+    module.exports = writingAnimation;
   }
+}
 )();
