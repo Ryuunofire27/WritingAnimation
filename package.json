@@ -4,7 +4,8 @@
   "description": "Animation of writing letter by letter",
   "main": "dist/server/writing-animation.min.js",
   "scripts": {
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",

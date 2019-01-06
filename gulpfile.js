@@ -4,6 +4,7 @@ const gulp = require('gulp'),
   babel = require('gulp-babel'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
+  task = gulp.task,
   dir = {
     src: 'src',
     dist: 'dist',
@@ -16,18 +17,20 @@ const gulp = require('gulp'),
     es6 : { presets : ['es2015'] }
   };
 
-gulp.task('es6', () => {
-  gulp
+const taskEs6 = () => {
+  return gulp
     .src(`${dir.src}/*.js`)
     .pipe( babel(opts.es6) )
     .pipe( gulp.dest(`${dir.dist}`) );
-});
+}
 
-
-gulp.task('js', () => {
-  gulp
+const taskJs = () => {
+  return gulp
     .src(files.JS)
     .pipe(concat(files.min))
     .pipe(uglify())
     .pipe(gulp.dest(`${dir.dist}`));
-});
+}
+
+
+gulp.task('default', gulp.series(taskEs6, taskJs));

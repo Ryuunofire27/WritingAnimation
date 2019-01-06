@@ -30,9 +30,22 @@ var writingAnimation = function writingAnimation(text, textContainer, delay) {
   }, delay);
 };
 
-(function () {
-  "use strict";
+if (window && window.document) {
+  var writingDocuments = window.document.getElementsByClassName('writing-animation');
 
+  if (writingDocuments.length > 0) {
+    for (var i = 0; i < writingDocuments.length; i++) {
+      var text = writingDocuments[i].getAttribute('data-anim-text') || '';
+      var textContainer = writingDocuments[i];
+      var delay = writingDocuments[i].getAttribute('data-anim-delay') || 1000;
+      var stop = writingDocuments[i].getAttribute('data-anim-stop') == 'true';
+      var changeDelay = writingDocuments[i].getAttribute('data-anim-change') || 0;
+      writingAnimation(text, textContainer, parseInt(delay, 10), stop, parseInt(changeDelay, 10));
+    }
+  }
+}
+
+(function () {
   if ((typeof module === 'undefined' ? 'undefined' : _typeof(module)) === 'object' && _typeof(module.exports) === 'object') {
     module.exports = writingAnimation;
   }
