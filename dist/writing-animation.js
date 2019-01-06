@@ -38,7 +38,7 @@ if (window && window.document) {
       var text = writingDocuments[i].getAttribute('data-anim-text') || '';
       var textContainer = writingDocuments[i];
       var delay = writingDocuments[i].getAttribute('data-anim-delay') || 1000;
-      var stop = writingDocuments[i].getAttribute('data-anim-stop') == 'true';
+      var stop = (writingDocuments[i].getAttribute('data-anim-stop') || 'true') == 'true';
       var changeDelay = writingDocuments[i].getAttribute('data-anim-change') || 0;
       writingAnimation(text, textContainer, parseInt(delay, 10), stop, parseInt(changeDelay, 10));
     }
