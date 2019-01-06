@@ -53,6 +53,10 @@ Set elements container with the class "writing-animation"
 Data attributes:
 
 data-anim-text: The text parameter.
+
 data-anim-delay: The delay parameter.
+
 data-anim-stop: The stop parameter.
+
 data-anim-change: The changeDelay parameter.
+
